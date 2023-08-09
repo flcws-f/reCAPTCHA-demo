@@ -1,0 +1,11 @@
+<!DOCTYPE HTML><html dir="ltr"><head><meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, user-scalable=yes"><title>ReCAPTCHA 演示</title><link rel="stylesheet" href="https://www.gstatic.cn/recaptcha/releases/pCoGBhjs9s8EhFOHJFe8cqis/demo_cn__ltr.css" type="text/css"><script src='/recaptcha/api.js' async defer nonce="mXnsq3a13nl9HqcfGfrCYw"></script></head><body><div class="sample-form"><div class=""><!-- BEGIN: ReCAPTCHA implementation example. --><div id="recaptcha-demo" class="g-recaptcha" data-sitekey="6Le-wvkSAAAAAPBMRTvw0Q4Muexq9bi0DJwx_mJ-" data-callback="onSuccess" data-action="action"></div><script nonce="mXnsq3a13nl9HqcfGfrCYw">
+                      var onSuccess = function(response) {
+                        var errorDivs = document.getElementsByClassName("recaptcha-error");
+                        if (errorDivs.length) {
+                          errorDivs[0].className = "";
+                        }
+                        var errorMsgs = document.getElementsByClassName("recaptcha-error-message");
+                        if (errorMsgs.length) {
+                          errorMsgs[0].parentNode.removeChild(errorMsgs[0]);
+                        }
+                        };</script><!-- Optional noscript fallback. --><noscript><div style="width: 302px; height: 462px;"><iframe src="/recaptcha/api/fallback?k=6Le-wvkSAAAAAPBMRTvw0Q4Muexq9bi0DJwx_mJ-" frameborder="0" scrolling="no"></iframe><div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"></textarea></div></div><br></noscript><!-- END: ReCAPTCHA implementation example. --></div></div></body></html>
